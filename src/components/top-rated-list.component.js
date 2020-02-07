@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Rater from 'react-rater'
-import 'react-rater/lib/react-rater.css'
+import Rater from 'react-rater';
+import 'react-rater/lib/react-rater.css';
+import '../styles/react-rater.css';
 
 //component to get top rated teachers all time
 //where comments $gte: 5

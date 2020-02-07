@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Rater from 'react-rater'
-import 'react-rater/lib/react-rater.scss'
+import 'react-rater/lib/react-rater.scss';
+import '../styles/react-rater.css';
 import Heart from "./rates-test.component";
 
 //component to get worst rated teachers

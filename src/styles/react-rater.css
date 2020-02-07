@@ -1,0 +1,41 @@
+.react-rater {
+  display: inline-block;
+  line-height: normal; }
+  .react-rater > * {
+    display: inline-block; }
+
+.react-rater-star {
+  cursor: pointer;
+  color: #ccc;
+  position: relative; }
+  .react-rater-star.will-be-active {
+    color: #666; }
+  .react-rater-star.is-active {
+    color: rgb(247, 184, 91); }
+  .react-rater-star.is-active-half:before {
+    color: rgb(240, 196, 53);
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    width: 80%;
+    overflow: hidden; }
+  .react-rater-star.is-disabled {
+    cursor: default; }
+
+.react-rater-cross {
+  cursor: pointer;
+  color: #ccc;
+  position: relative; }
+  .react-rater-cross.will-be-active {
+    color: #666; }
+  .react-rater-cross.is-active {
+    color: rgb(247, 83, 19); }
+  .react-rater-cross.is-active-half:before {
+    color: rgb(250, 43, 16);
+    content: '\2605';
+    position: absolute;
+    left: 0;
+    width: 80%;
+    overflow: hidden; }
+  .react-rater-cross.is-disabled {
+    cursor: default; }

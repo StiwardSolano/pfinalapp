@@ -1,6 +1,7 @@
 # pfinalapp MERN stack 
 
-For subject rating, based on user feedback
+For subject rating, based on user feedback.
+API: https://github.com/StiwardSolano/pfinalapi
 
 ## Getting Started
 

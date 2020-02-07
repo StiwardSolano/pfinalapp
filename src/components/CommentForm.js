@@ -66,7 +66,7 @@ export default class CommentForm extends Component {
 
     console.log(comment);
 
-    axios.post('http://localhost:5000/comments/add/'+teacherid_array[2], comment)
+    axios.post('https://pfinalapi.herokuapp.com/comments/add/'+teacherid_array[2], comment)
     .then(res => console.log(res.data))
     .then(res => {
         // add time return from api and push comment to parent state
@@ -86,42 +86,6 @@ export default class CommentForm extends Component {
         loading: false
       });
     });
-    //
-    /*
-    let { comment } = this.state;
-    fetch('http://localhost:5000/comments/add/'+teacherid_array[2], {
-      method: "post",
-      body: //JSON.stringify(comment)
-          JSON.stringify(
-            teacherid_array[2],
-            this.state.comment.name,
-            this.state.comment.message
-          )  
-    })
-      .then(res => res.json())
-      .then(res => {
-        if (res.error) {
-          this.setState({ loading: false, error: res.error });
-          console.log('El error está aquí:'+res.error);
-        } else {
-          // add time return from api and push comment to parent state
-          comment.teacherId = teacherid_array[2];
-          //console.log(comment);
-          this.props.addComment(comment);
-
-          // clear the message box
-          this.setState({
-            loading: false,
-            comment: { ...comment, message: "", name:"" }
-          });
-        }
-      })
-      .catch(err => {
-        this.setState({
-          error: "Error fatal, revisa la api.",
-          loading: false
-        });
-      });*/
   }
 
   /**

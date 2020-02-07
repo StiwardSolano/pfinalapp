@@ -45,7 +45,7 @@ export default class CreateSubject extends Component {
 
   console.log(subject);
 
-  axios.post('http://localhost:5000/subjects/add', subject)
+  axios.post('https://pfinalapi.herokuapp.com/subjects/add', subject)
   .then(res => console.log(res.data));
 
   //window.location = '/subjects';//-> redirect after post

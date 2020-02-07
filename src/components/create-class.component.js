@@ -33,7 +33,7 @@ export default class CreateClass extends Component {
   componentDidMount() {
     axios.all([
 
-    axios.get('http://localhost:5000/teachers/')
+    axios.get('https://pfinalapi.herokuapp.com/teachers/')
         .then(response => {
           if (response.data.length > 0) {
             this.setState({
@@ -44,7 +44,7 @@ export default class CreateClass extends Component {
         })
         .catch((error) => {console.log(error)}),
 
-    axios.get('http://localhost:5000/subjects/')
+    axios.get('https://pfinalapi.herokuapp.com/subjects/')
         .then(responseSubj => {
         if (responseSubj.data.length > 0) {
             this.setState({
@@ -86,8 +86,8 @@ export default class CreateClass extends Component {
     };
 
   console.log(classes);
-
-  axios.post('http://localhost:5000/class/test', classes)
+    //TODO check route & update it
+  axios.post('https://pfinalapi.herokuapp.com/class/test', classes)
   .then(res => console.log(res.data))
   .catch(error => {
     console.log(error.response)

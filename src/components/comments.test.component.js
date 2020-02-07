@@ -23,7 +23,7 @@ export default class CommentsTest extends Component {
     this.setState({ loading: true });
     console.log(teacherid_array[2]);
     // colocar id de comentarios
-    fetch("http://localhost:5000/comments/"+teacherid_array[2])
+    fetch("https://pfinalapi.herokuapp.com/comments/"+teacherid_array[2])
       .then(res => res.json())
       .then(res => {
         this.setState({
@@ -48,25 +48,8 @@ export default class CommentsTest extends Component {
   }
 
   render() {
-    //const loadingSpin = this.state.loading ? "App-logo Spin" : "App-logo";
     return (
-      <div className="App container bg-light shadow">{/*
-        <header className="App-header">
-          <img src={logo} className={loadingSpin} alt="logo" />
-          <h1 className="App-title">
-            React Comments
-            <span className="px-2" role="img" aria-label="Chat">
-              💬
-            </span>
-          </h1>
-          <p>
-            Checkout the tutorial on{" "}
-            <a className="text-light" href="https://qcode.in">
-              QCode.in
-            </a>
-          </p>
-        </header>*/}
-
+      <div className="App container bg-light shadow">
         <div className="row">
           <div className="col-4  pt-3 border-right">
             <h6>Comenta a tu Profesor</h6>

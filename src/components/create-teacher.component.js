@@ -24,7 +24,7 @@ export default class CreateTeacher extends Component {
     };
     console.log(newTeacher);
 
-    axios.post('http://localhost:5000/teachers/add', newTeacher)
+    axios.post('https://pfinalapi.herokuapp.com/teachers/add', newTeacher)
     .then(res => console.log(res.data));
     
     this.setState({

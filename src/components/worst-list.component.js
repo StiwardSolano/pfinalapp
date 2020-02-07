@@ -26,7 +26,7 @@ export default class WorstList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/rated/worst/')
+    axios.get('https://pfinalapi.herokuapp.com/rated/worst/')
      .then(response => {
        this.setState({ ratings: response.data });
        //console.log(response.data);

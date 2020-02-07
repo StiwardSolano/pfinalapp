@@ -26,7 +26,7 @@ export default class TopRatedList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/rated/toprated/')
+    axios.get('https://pfinalapi.herokuapp.com/rated/toprated/')
      .then(response => {
        this.setState({ ratings: response.data });
        console.log(response.data);

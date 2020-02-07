@@ -24,7 +24,7 @@ export default class ClassList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/class/')
+    axios.get('https://pfinalapi.herokuapp.com/class/')
      .then(response => {
        this.setState({ classes: response.data });
      })
@@ -34,7 +34,7 @@ export default class ClassList extends Component {
   }
 
   deleteClass(id) {
-    axios.delete('http://localhost:5000/class'+id)
+    axios.delete('https://pfinalapi.herokuapp.com/class'+id)
       .then(res => console.log(res.data));
     this.setState({
         classes: this.state.classes.filter(el => el._id !== id)

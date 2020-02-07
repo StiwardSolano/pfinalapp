@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Rater from 'react-rater';
 import 'react-rater/lib/react-rater.css';
-import '../styles/react-rater.css';
+import '../styles/react-rater.scss';
 
 //component to get top rated teachers
 const Subject = props => (

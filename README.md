@@ -12,15 +12,11 @@ For subject rating, based on user feedback
 
 3. cd /ruta del proyecto/ 
 
-4. npx create-react-app
+4. npm install
 
-5. npm install -g nodemon react-scripts 
+5. npm instal aixos mongoose express cors bootstrap react-router-dom node-sass @material-ui/core
 
-6. Abrir powershell como administrador -> Set-ExecutionPolicy Unrestricted
-
-7. npm instal aixos mongoose express cors mongojs bootstrap react-datepicker react-router-dom
-
-8. Para ejecutar: npm start
+6. Para ejecutar: npm start
 
 ## License
 

@@ -27,6 +27,9 @@ export default class Navbar extends Component {
           <li>
             <Link to="/worst" className="dropdown-item">Negative</Link>
           </li>
+          <li>
+            <Link to="/reco" className="dropdown-item">Recomended</Link>
+          </li>
         </ul>
         </div>
       </nav>

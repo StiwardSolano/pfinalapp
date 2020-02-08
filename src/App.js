@@ -12,6 +12,7 @@ import CommentsTest from "./components/comments.test.component";
 import TopsList from "./components/tops-list.component";
 import WorstList from "./components/worst-list.component";
 import TopRatedList from "./components/top-rated-list.component";
+import RecoList from "./components/reco-list.component";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/comments/:id" component={CommentsTest} />
         <Route path="/worst" component={WorstList} />
         <Route path="/toprated" component={TopRatedList} />
+        <Route path="/reco" component={RecoList} />
       </div>
     </Router>
   );

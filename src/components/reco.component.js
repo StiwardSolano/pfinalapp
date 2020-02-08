@@ -16,7 +16,7 @@ const Reco = (props) => {
         .filter(prop => (delete crossProps[prop], props[prop]))
         .map(prop => nameMap[prop])
         .join(' ')
-  return <div className={`react-rater-reco ${className}`} {...crossProps}>⚛️</div>
+  return <div className={`react-rater-reco ${className}`} {...crossProps}><span>☝</span></div>
 }
 
 Reco.defaultProps = {

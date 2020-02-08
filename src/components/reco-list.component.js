@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Rater from 'react-rater'
-import 'react-rater/lib/react-rater.scss';
+import Rater from 'react-rater';
+import 'react-rater/lib/react-rater.css';
 import '../styles/react-raterReco.css';
 import Reco from "./reco.component";
 
@@ -46,7 +46,7 @@ export default class RecoList extends Component {
   render() {
     return (
       <div>
-        <h3>Class negative feedback based on comments</h3>
+        <h3>Improvement feedback based on comments</h3>
         <table className="table">
           <thead className="thead-light">
             <tr>

@@ -26,16 +26,16 @@
   cursor: pointer;
   color: #ccc;
   position: relative; }
-  .react-rater-cross.will-be-active {
+  .react-rater-reco.will-be-active {
     color: #666; }
-  .react-rater-cross.is-active {
+  .react-rater-reco.is-active {
     color: rgb(66, 230, 216); }
-  .react-rater-cross.is-active-half:before {
+  .react-rater-reco.is-active-half:before {
     color: rgb(250, 43, 16);
     content: '\2605';
     position: absolute;
     left: 0;
     width: 80%;
     overflow: hidden; }
-  .react-rater-cross.is-disabled {
+  .react-rater-reco.is-disabled {
     cursor: default; }

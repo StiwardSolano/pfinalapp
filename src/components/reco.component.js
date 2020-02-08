@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'react-rater/lib/react-rater.css';
-import '../styles/react-raterReco.css';
 
 const Reco = (props) => {
-  const crossProps = Object.assign({}, props)
+  const recoProps = Object.assign({}, props)
   const nameMap = {
     isDisabled: 'is-disabled',
     isActive: 'is-active',
@@ -13,10 +12,10 @@ const Reco = (props) => {
   }
   const className = Object.keys(nameMap)
         // eslint-disable-next-line 
-        .filter(prop => (delete crossProps[prop], props[prop]))
+        .filter(prop => (delete recoProps[prop], props[prop]))
         .map(prop => nameMap[prop])
         .join(' ')
-  return <div className={`react-rater-reco ${className}`} {...crossProps}>☞</div>
+  return <div className={`react-rater-reco ${className}`} {...recoProps}>✓</div>
 }
 
 Reco.defaultProps = {
